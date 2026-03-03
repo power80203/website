@@ -9,8 +9,8 @@ hasCJKLanguage = true
     contentDir = 'content/zh'
     weight = 1
     [languages.zh-tw.params]
-      description = "資深經理 | 台灣領先製造業 (10,000+ 員工) | 資料工程與 AI 專家"
-      jobTitle = "資深經理 (Senior Manager)"
+      description = "Data Team Lead | 台灣領先製造業 (10,000+ 員工) | 資料工程與 AI 專家"
+      jobTitle = "Data Team Lead"
     [[languages.zh-tw.menu.main]]
       name = "專業資產"
       url = "/"

@@ -1,12 +1,12 @@
 {{ define "main" }}
 <section id="hero">
-  <h2 class="mono" style="color: var(--primary); margin-bottom: 0.5rem;">> ./profile.sh --status=senior_manager</h2>
+  <h2 class="mono" style="color: var(--primary); margin-bottom: 0.5rem;">> ./profile.sh --status=data_team_lead</h2>
   <div class="hero-text">
     <p>
       {{ if eq .Lang "zh-tw" }}
-        我是 <strong>{{ .Site.Params.author }}</strong>，目前在台灣領先製造業 (10,000+ 員工) 擔任 <strong>資深經理 (Senior Manager)</strong>。
+        我是 <strong>{{ .Site.Params.author }}</strong>，目前在台灣領先製造業 (10,000+ 員工) 擔任 <strong>Data Team Lead</strong>。
       {{ else }}
-        I am <strong>{{ .Site.Params.author }}</strong>, serving as a <strong>Senior Manager</strong> at a leading Taiwanese manufacturing corporation (10,000+ staff).
+        I am <strong>{{ .Site.Params.author }}</strong>, serving as a <strong>Data Team Lead</strong> at a leading Taiwanese manufacturing corporation (10,000+ staff).
       {{ end }}
     </p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0;">
