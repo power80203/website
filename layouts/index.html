@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section id="hero" style="text-align:center; padding: 3rem 0;">
+  <h2 class="mono" style="color: var(--primary)">> ./hello_world.py</h2>
+  <p style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto;">
+    I am <strong>{{ .Site.Params.author }}</strong>, a <strong>{{ .Site.Params.jobTitle }}</strong> specializing in building robust data infrastructures.
+  </p>
+  <a href="{{ .Site.Params.calendly }}" class="cta">Book a Consultation</a>
+</section>
+
+<section id="github-showcase">
+  <h3 class="mono">> list --repos --featured</h3>
+  <div class="border-box">
+    <h4 style="margin-top:0"><a href="{{ .Site.Params.github }}/core-library" style="color:var(--primary)">core-library</a></h4>
+    <p style="font-size: 0.9rem; color: var(--text-muted)">High-performance ETL utility for Python data workflows.</p>
+  </div>
+  <div class="border-box">
+    <h4 style="margin-top:0"><a href="{{ .Site.Params.github }}/workout-app" style="color:var(--primary)">workout-app</a></h4>
+    <p style="font-size: 0.9rem; color: var(--text-muted)">Automated workout tracking system with data visualization.</p>
+  </div>
+</section>
+
+<section id="medium-sync" style="margin-top: 3rem;">
+  <h3 class="mono">> cat medium_insights.log</h3>
+  <p style="color: var(--text-muted); font-style: italic;">Latest professional insights synchronized from Medium:</p>
+  <ul style="list-style: none; padding: 0;">
+    <li class="border-box">
+      <a href="{{ .Site.Params.medium }}" style="color:var(--primary)">Airflow ETL Optimization: A Deep Dive</a>
+      <p style="font-size: 0.8rem; margin: 0.5rem 0;">Published on Medium | Jan 2026</p>
+    </li>
+    <li class="border-box">
+      <a href="{{ .Site.Params.medium }}" style="color:var(--primary)">Scaling Data Pipelines with Kubernetes</a>
+      <p style="font-size: 0.8rem; margin: 0.5rem 0;">Published on Medium | Dec 2025</p>
+    </li>
+  </ul>
+</section>
+{{ end }}

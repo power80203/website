@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article>
+  <h2 class="mono">> {{ .Title }}</h2>
+  <div style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">
+    {{ .Date.Format "Jan 2, 2006" }}
+  </div>
+  <div class="content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

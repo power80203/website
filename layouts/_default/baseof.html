@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+  
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "jobTitle": "{{ .Site.Params.jobTitle }}",
+    "url": "{{ .Site.BaseURL }}",
+    "knowsAbout": [
+      {{ range $index, $element := .Site.Params.knowsAbout }}
+        {{ if $index }},{{ end }}"{{ $element }}"
+      {{ end }}
+    ],
+    "sameAs": [
+      "{{ .Site.Params.medium }}",
+      "{{ .Site.Params.github }}",
+      "{{ .Site.Params.linkedin }}"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>{{ .Site.Title }}</h1>
+    <nav>
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </header>
+  
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }} | Digital Entity</p>
+    <p>Contact: <a href="mailto:{{ .Site.Params.contactEmail }}" style="color:var(--text-muted)">{{ .Site.Params.contactEmail }}</a></p>
+  </footer>
+</body>
+</html>

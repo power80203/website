@@ -1,0 +1,34 @@
+baseURL = 'https://perryhu.github.io/'
+languageCode = 'zh-tw'
+title = 'Perry Hu | Personal Brand Entity'
+
+[params]
+  description = "Data Team Lead | Data Engineering, ETL, Apache Airflow, Python, SQL Server Specialist"
+  author = "Perry Hu"
+  jobTitle = "Data Team Lead"
+  
+  # Semantic SEO: KnowsAbout
+  knowsAbout = ["Data Engineering", "ETL", "Apache Airflow", "Python", "SQL Server"]
+
+  # SameAs: Asset Integration
+  medium = "https://medium.com/@perryhu"
+  github = "https://github.com/perryhu"
+  linkedin = "https://www.linkedin.com/in/perryhu"
+  
+  # Conversion Path
+  contactEmail = "contact@datafox.tw"
+  calendly = "https://calendly.com/perryhu"
+
+[menu]
+  [[menu.main]]
+    name = "Works"
+    url = "/works"
+    weight = 1
+  [[menu.main]]
+    name = "Medium"
+    url = "/medium-sync"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 3
