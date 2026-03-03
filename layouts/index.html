@@ -28,48 +28,19 @@
 
 <section id="github-showcase">
   <h3>[[ {{ if eq .Lang "zh-tw" }}核心作品集{{ else }}REPOSITORIES{{ end }} ]]</h3>
-  <div class="asset-card">
-    <h4><a href="{{ .Site.Params.github }}/core-library">core-library</a></h4>
-    <p>
-      {{ if eq .Lang "zh-tw" }}
-        高效能 Python ETL 工具庫，專注於資料串流處理與資料完整性。
-      {{ else }}
-        High-performance ETL utility for Python data workflows. Focused on stream processing and data integrity.
-      {{ end }}
-    </p>
-    <div style="margin-top: 1rem;">
-      <span class="badge">Python</span> <span class="badge">ETL</span>
-    </div>
-  </div>
-  <div class="asset-card">
-    <h4><a href="{{ .Site.Params.github }}/workout-app">workout-app</a></h4>
-    <p>
-      {{ if eq .Lang "zh-tw" }}
-        自動化健身追蹤系統，整合複雜的資料視覺化與健康指標分析。
-      {{ else }}
-        Automated workout tracking system with sophisticated data visualization and health metric analysis.
-      {{ end }}
-    </p>
-    <div style="margin-top: 1rem;">
-      <span class="badge">TypeScript</span> <span class="badge">DataViz</span>
-    </div>
+  <div class="asset-card" style="border-style: dashed; opacity: 0.6; text-align: center;">
+    <p class="mono">{{ if eq .Lang "zh-tw" }}> 專案內容建置中...{{ else }}> Project assets loading...{{ end }}</p>
   </div>
 </section>
 
 <section id="medium-sync">
   <h3>[[ {{ if eq .Lang "zh-tw" }}最新洞察{{ else }}LATEST_INSIGHTS{{ end }} ]]</h3>
-  <div class="asset-card">
-    <h4><a href="{{ .Site.Params.medium }}">
-      {{ if eq .Lang "zh-tw" }}Airflow ETL 優化：深度解析{{ else }}Airflow ETL Optimization: A Deep Dive{{ end }}
-    </a></h4>
-    <p>
-      {{ if eq .Lang "zh-tw" }}
-        在大規模 Apache Airflow 環境中降低延遲的策略性做法。
-      {{ else }}
-        Strategic approaches to reducing latency in large-scale Apache Airflow environments.
-      {{ end }}
+  <div class="asset-card" style="border-style: dashed; opacity: 0.6; text-align: center;">
+    <p class="mono">
+      <a href="{{ .Site.Params.medium }}" style="color: var(--text-muted); text-decoration: none;">
+        {{ if eq .Lang "zh-tw" }}> 前往 Medium 專欄{{ else }}> Visit Medium Profile{{ end }}
+      </a>
     </p>
-    <p style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.6;">SOURCE: MEDIUM.COM</p>
   </div>
 </section>
 {{ end }}

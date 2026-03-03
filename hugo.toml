@@ -47,7 +47,7 @@ hasCJKLanguage = true
 [params]
   author = "Perry Hu"
   knowsAbout = ["Data Engineering", "ETL", "Apache Airflow", "Python", "SQL Server"]
-  medium = "https://medium.com/@perryhu"
+  medium = "https://medium.com/@power80203"
   github = "https://github.com/power80203"
   linkedin = "https://www.linkedin.com/in/perry-wu-7bb351b7/"
   calendly = "https://calendly.com/perryhu"
