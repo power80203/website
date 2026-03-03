@@ -1,5 +1,5 @@
 ---
-title: "About Perry Hu"
+title: "About Perry Wu"
 date: 2026-03-03
 ---
 
@@ -25,4 +25,4 @@ I am a **Data Team Lead** specializing in Data Engineering and AI at a leading T
 ### Contact & Collaboration
 I am always open to discussing data strategy, leadership, or technical architecture.
 
-- **LinkedIn**: [Perry Hu Profile](https://www.linkedin.com/in/perry-wu-7bb351b7/)
+- **LinkedIn**: [Perry Wu Profile](https://www.linkedin.com/in/perry-wu-7bb351b7/)

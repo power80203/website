@@ -1,5 +1,5 @@
 baseURL = 'https://power80203.github.io/website/'
-title = 'Perry Hu | Personal Brand Entity'
+title = 'Perry Wu | Personal Brand Entity'
 defaultContentLanguage = 'zh-tw'
 hasCJKLanguage = true
 
@@ -45,7 +45,7 @@ hasCJKLanguage = true
       weight = 3
 
 [params]
-  author = "Perry Hu"
+  author = "Perry Wu"
   knowsAbout = ["Python", "SQL", "Spark", "Kafka", "Airflow", "OpenMetadata", "GenAI", "Data Modeling"]
   medium = "https://medium.com/@power80203"
   github = "https://github.com/power80203"

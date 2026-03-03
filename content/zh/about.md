@@ -1,5 +1,5 @@
 ---
-title: "關於 Perry Hu"
+title: "關於 Perry Wu"
 date: 2026-03-03
 ---
 
@@ -25,4 +25,4 @@ date: 2026-03-03
 ### 聯繫與合作
 我隨時歡迎討論關於資料策略、領導管理或技術架構的議題。
 
-- **LinkedIn**: [Perry Hu 個人檔案](https://www.linkedin.com/in/perry-wu-7bb351b7/)
+- **LinkedIn**: [Perry Wu 個人檔案](https://www.linkedin.com/in/perry-wu-7bb351b7/)
