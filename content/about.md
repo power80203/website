@@ -15,6 +15,5 @@ I am a **Data Team Lead** with a deep passion for data architecture and pipeline
 ### Contact & Collaboration
 I am always open to discussing data strategy or technical challenges. 
 
-- **Email**: [contact@datafox.tw](mailto:contact@datafox.tw)
-- **LinkedIn**: [Perry Hu Profile](https://www.linkedin.com/in/perryhu)
+- **LinkedIn**: [Perry Hu Profile](https://www.linkedin.com/in/perry-wu-7bb351b7/)
 - **Calendly**: [Book a Slot](https://calendly.com/perryhu)

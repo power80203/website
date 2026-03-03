@@ -1,4 +1,4 @@
-baseURL = 'https://power80203.github.io/'
+baseURL = 'https://power80203.github.io/website/'
 languageCode = 'zh-tw'
 title = 'Perry Hu | Personal Brand Entity'
 
@@ -13,10 +13,8 @@ title = 'Perry Hu | Personal Brand Entity'
   # SameAs: Asset Integration
   medium = "https://medium.com/@perryhu"
   github = "https://github.com/power80203"
-  linkedin = "https://www.linkedin.com/in/perryhu"
+  linkedin = "https://www.linkedin.com/in/perry-wu-7bb351b7/"
   
-  # Conversion Path
-  contactEmail = "contact@datafox.tw"
   calendly = "https://calendly.com/perryhu"
 
 [menu]
