@@ -1,32 +1,53 @@
 baseURL = 'https://power80203.github.io/website/'
-languageCode = 'zh-tw'
 title = 'Perry Hu | Personal Brand Entity'
+defaultContentLanguage = 'zh-tw'
+hasCJKLanguage = true
+
+[languages]
+  [languages.zh-tw]
+    languageName = '繁體中文'
+    contentDir = 'content/zh'
+    weight = 1
+    [languages.zh-tw.params]
+      description = "資料團隊主管 | 資料工程, ETL, Apache Airflow, Python, SQL Server 專家"
+      jobTitle = "資料團隊主管"
+    [[languages.zh-tw.menu.main]]
+      name = "作品集"
+      url = "/works"
+      weight = 1
+    [[languages.zh-tw.menu.main]]
+      name = "Medium 專欄"
+      url = "/medium-sync"
+      weight = 2
+    [[languages.zh-tw.menu.main]]
+      name = "關於我"
+      url = "/about"
+      weight = 3
+
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 2
+    [languages.en.params]
+      description = "Data Team Lead | Data Engineering, ETL, Apache Airflow, Python, SQL Server Specialist"
+      jobTitle = "Data Team Lead"
+    [[languages.en.menu.main]]
+      name = "Works"
+      url = "/works"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "Medium"
+      url = "/medium-sync"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/about"
+      weight = 3
 
 [params]
-  description = "Data Team Lead | Data Engineering, ETL, Apache Airflow, Python, SQL Server Specialist"
   author = "Perry Hu"
-  jobTitle = "Data Team Lead"
-  
-  # Semantic SEO: KnowsAbout
   knowsAbout = ["Data Engineering", "ETL", "Apache Airflow", "Python", "SQL Server"]
-
-  # SameAs: Asset Integration
   medium = "https://medium.com/@perryhu"
   github = "https://github.com/power80203"
   linkedin = "https://www.linkedin.com/in/perry-wu-7bb351b7/"
-  
   calendly = "https://calendly.com/perryhu"
-
-[menu]
-  [[menu.main]]
-    name = "Works"
-    url = "/works"
-    weight = 1
-  [[menu.main]]
-    name = "Medium"
-    url = "/medium-sync"
-    weight = 2
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 3

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
   
-  <!-- JSON-LD Person Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,7 +34,19 @@
     <h1>{{ .Site.Title }}</h1>
     <nav>
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
+        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+      {{ end }}
+      <span style="color:var(--border); margin: 0 0.5rem;">|</span>
+      {{ if .IsTranslated }}
+        {{ range .Translations }}
+          <a href="{{ .Permalink }}" style="color:var(--accent)">{{ .Language.LanguageName }}</a>
+        {{ end }}
+      {{ else }}
+        {{ if eq .Lang "zh-tw" }}
+          <a href="{{ "/en/" | absURL }}" style="color:var(--accent)">English</a>
+        {{ else }}
+          <a href="{{ "/" | absURL }}" style="color:var(--accent)">繁體中文</a>
+        {{ end }}
       {{ end }}
     </nav>
   </header>

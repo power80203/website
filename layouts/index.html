@@ -3,30 +3,53 @@
   <h2 class="mono" style="color: var(--primary); margin-bottom: 0.5rem;">> ./profile.sh --status=active</h2>
   <div class="hero-text">
     <p>
-      I am <strong>{{ .Site.Params.author }}</strong>, a <strong>{{ .Site.Params.jobTitle }}</strong>.
+      {{ if eq .Lang "zh-tw" }}
+        我是 <strong>{{ .Site.Params.author }}</strong>，一名 <strong>{{ .Site.Params.jobTitle }}</strong>。
+      {{ else }}
+        I am <strong>{{ .Site.Params.author }}</strong>, a <strong>{{ .Site.Params.jobTitle }}</strong>.
+      {{ end }}
     </p>
     <p style="color: var(--text-muted); font-size: 0.95rem;">
-      Architecting resilient data pipelines and optimizing ETL performance using 
+      {{ if eq .Lang "zh-tw" }}
+        專注於建構韌性資料管線，並優化 ETL 效能，使用技術包含：
+      {{ else }}
+        Architecting resilient data pipelines and optimizing ETL performance using:
+      {{ end }}
+      <br>
       <span class="badge">Apache Airflow</span> 
       <span class="badge">Python</span> 
       <span class="badge">SQL Server</span>.
     </p>
   </div>
-  <a href="{{ .Site.Params.calendly }}" class="cta">Request Consultation</a>
+  <a href="{{ .Site.Params.calendly }}" class="cta">
+    {{ if eq .Lang "zh-tw" }}預約技術諮詢{{ else }}Request Consultation{{ end }}
+  </a>
 </section>
 
 <section id="github-showcase">
-  <h3>[[ REPOSITORIES ]]</h3>
+  <h3>[[ {{ if eq .Lang "zh-tw" }}核心作品集{{ else }}REPOSITORIES{{ end }} ]]</h3>
   <div class="asset-card">
     <h4><a href="{{ .Site.Params.github }}/core-library">core-library</a></h4>
-    <p>High-performance ETL utility for Python data workflows. Focused on stream processing and data integrity.</p>
+    <p>
+      {{ if eq .Lang "zh-tw" }}
+        高效能 Python ETL 工具庫，專注於資料串流處理與資料完整性。
+      {{ else }}
+        High-performance ETL utility for Python data workflows. Focused on stream processing and data integrity.
+      {{ end }}
+    </p>
     <div style="margin-top: 1rem;">
       <span class="badge">Python</span> <span class="badge">ETL</span>
     </div>
   </div>
   <div class="asset-card">
     <h4><a href="{{ .Site.Params.github }}/workout-app">workout-app</a></h4>
-    <p>Automated workout tracking system with sophisticated data visualization and health metric analysis.</p>
+    <p>
+      {{ if eq .Lang "zh-tw" }}
+        自動化健身追蹤系統，整合複雜的資料視覺化與健康指標分析。
+      {{ else }}
+        Automated workout tracking system with sophisticated data visualization and health metric analysis.
+      {{ end }}
+    </p>
     <div style="margin-top: 1rem;">
       <span class="badge">TypeScript</span> <span class="badge">DataViz</span>
     </div>
@@ -34,16 +57,19 @@
 </section>
 
 <section id="medium-sync">
-  <h3>[[ LATEST_INSIGHTS ]]</h3>
+  <h3>[[ {{ if eq .Lang "zh-tw" }}最新洞察{{ else }}LATEST_INSIGHTS{{ end }} ]]</h3>
   <div class="asset-card">
-    <h4><a href="{{ .Site.Params.medium }}">Airflow ETL Optimization: A Deep Dive</a></h4>
-    <p>Strategic approaches to reducing latency in large-scale Apache Airflow environments.</p>
-    <p style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.6;">SOURCE: MEDIUM.COM | 2026-01</p>
-  </div>
-  <div class="asset-card">
-    <h4><a href="{{ .Site.Params.medium }}">Scaling Data Pipelines with Kubernetes</a></h4>
-    <p>Infrastructure as Code: Leveraging K8s for dynamic executor scaling in data environments.</p>
-    <p style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.6;">SOURCE: MEDIUM.COM | 2025-12</p>
+    <h4><a href="{{ .Site.Params.medium }}">
+      {{ if eq .Lang "zh-tw" }}Airflow ETL 優化：深度解析{{ else }}Airflow ETL Optimization: A Deep Dive{{ end }}
+    </a></h4>
+    <p>
+      {{ if eq .Lang "zh-tw" }}
+        在大規模 Apache Airflow 環境中降低延遲的策略性做法。
+      {{ else }}
+        Strategic approaches to reducing latency in large-scale Apache Airflow environments.
+      {{ end }}
+    </p>
+    <p style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.6;">SOURCE: MEDIUM.COM</p>
   </div>
 </section>
 {{ end }}
