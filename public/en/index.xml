@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Perry Wu | Personal Brand Entity</title><link>https://power80203.github.io/website/en/</link><description>Recent content on Perry Wu | Personal Brand Entity</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://power80203.github.io/website/en/index.xml" rel="self" type="application/rss+xml"/><item><title>About Perry Wu</title><link>https://power80203.github.io/website/en/about/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://power80203.github.io/website/en/about/</guid><description>&lt;h3 id="professional-profile"&gt;Professional Profile&lt;/h3&gt;
-&lt;p&gt;I am a &lt;strong&gt;Data Team Lead&lt;/strong&gt; specializing in Data Engineering and AI at a leading Taiwanese manufacturing corporation with over 10,000 employees. My expertise lies in orchestrating large-scale data infrastructures that turn raw information into strategic assets.&lt;/p&gt;
-&lt;h4 id="core-expertise"&gt;Core Expertise&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Data Infrastructure&lt;/strong&gt;: Built systems capable of processing &lt;strong&gt;100TB of data daily&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Optimization&lt;/strong&gt;: Achieved a &lt;strong&gt;70% cost reduction&lt;/strong&gt; in cloud/on-prem resources and &lt;strong&gt;20x performance improvement&lt;/strong&gt; in data pipelines.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: Maintained a system uptime of &lt;strong&gt;99.999%&lt;/strong&gt; for mission-critical operations.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Leadership&lt;/strong&gt;: Scaled and mentored a high-performance data engineering team of 4+.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id="education"&gt;Education&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;National Chiao Tung University (NCTU)&lt;/strong&gt; | Master&amp;rsquo;s Degree&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id="technical-stack"&gt;Technical Stack&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Languages &amp;amp; Logic&lt;/strong&gt;: Python, SQL, Data Modeling.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Big Data &amp;amp; Streaming&lt;/strong&gt;: Spark, Kafka.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Orchestration&lt;/strong&gt;: Apache Airflow.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Governance &amp;amp; Future&lt;/strong&gt;: OpenMetadata, Generative AI (GenAI) integration.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="contact--collaboration"&gt;Contact &amp;amp; Collaboration&lt;/h3&gt;
-&lt;p&gt;I am always open to discussing data strategy, leadership, or technical architecture.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perry Wu | Data Journey</title>
+    <link>https://power80203.github.io/website/en/</link>
+    <description>Recent content on Perry Wu | Data Journey</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://power80203.github.io/website/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Perry Wu</title>
+      <link>https://power80203.github.io/website/en/about/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://power80203.github.io/website/en/about/</guid>
+      <description>&lt;h3 id=&#34;professional-profile&#34;&gt;Professional Profile&lt;/h3&gt;&#xA;&lt;p&gt;I am a &lt;strong&gt;Data Team Lead&lt;/strong&gt; specializing in Data Engineering and AI at a leading Taiwanese manufacturing corporation with over 10,000 employees. My expertise lies in orchestrating large-scale data infrastructures that turn raw information into strategic assets.&lt;/p&gt;&#xA;&lt;h4 id=&#34;core-expertise&#34;&gt;Core Expertise&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data Infrastructure&lt;/strong&gt;: Built systems capable of processing &lt;strong&gt;100TB of data daily&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Optimization&lt;/strong&gt;: Achieved a &lt;strong&gt;70% cost reduction&lt;/strong&gt; in cloud/on-prem resources and &lt;strong&gt;20x performance improvement&lt;/strong&gt; in data pipelines.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: Maintained a system uptime of &lt;strong&gt;99.999%&lt;/strong&gt; for mission-critical operations.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Leadership&lt;/strong&gt;: Scaled and mentored a high-performance data engineering team of 4+.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;education&#34;&gt;Education&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;National Chiao Tung University (NCTU)&lt;/strong&gt; | Master&amp;rsquo;s Degree&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;technical-stack&#34;&gt;Technical Stack&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Languages &amp;amp; Logic&lt;/strong&gt;: Python, SQL, Data Modeling.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Big Data &amp;amp; Streaming&lt;/strong&gt;: Spark, Kafka.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Orchestration&lt;/strong&gt;: Apache Airflow.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Governance &amp;amp; Future&lt;/strong&gt;: OpenMetadata, Generative AI (GenAI) integration.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;contact--collaboration&#34;&gt;Contact &amp;amp; Collaboration&lt;/h3&gt;&#xA;&lt;p&gt;I am always open to discussing data strategy, leadership, or technical architecture.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
