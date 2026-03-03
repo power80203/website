@@ -17,7 +17,7 @@ hasCJKLanguage = true
       weight = 1
     [[languages.zh-tw.menu.main]]
       name = "Medium 專欄"
-      url = "/medium-sync"
+      url = "https://medium.com/@power80203"
       weight = 2
     [[languages.zh-tw.menu.main]]
       name = "關於我"
@@ -29,15 +29,15 @@ hasCJKLanguage = true
     contentDir = 'content/en'
     weight = 2
     [languages.en.params]
-      description = "Senior Manager | Leading Taiwanese Manufacturer (10,000+ Staff) | Data Engineering & AI Expert"
-      jobTitle = "Senior Manager"
+      description = "Data Team Lead | Leading Taiwanese Manufacturer (10,000+ Staff) | Data Engineering & AI Expert"
+      jobTitle = "Data Team Lead"
     [[languages.en.menu.main]]
       name = "Assets"
       url = "/"
       weight = 1
     [[languages.en.menu.main]]
       name = "Medium"
-      url = "/medium-sync"
+      url = "https://medium.com/@power80203"
       weight = 2
     [[languages.en.menu.main]]
       name = "About"

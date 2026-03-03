@@ -34,7 +34,8 @@
     <h1>{{ .Site.Title }}</h1>
     <nav>
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+        <a href="{{ if $isExternal }}{{ .URL }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
       {{ end }}
       <span style="color:var(--border); margin: 0 0.5rem;">|</span>
       {{ if .IsTranslated }}
