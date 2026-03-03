@@ -9,55 +9,74 @@
         I am <strong>{{ .Site.Params.author }}</strong>, serving as a <strong>Data Team Lead</strong> at a leading Taiwanese manufacturing corporation (10,000+ staff).
       {{ end }}
     </p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0;">
-      <div class="asset-card" style="text-align: center; padding: 1rem; margin-bottom: 0;">
-        <div style="color: var(--accent); font-size: 1.5rem; font-weight: bold;">100TB</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted);">Daily Processing</div>
+    
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div style="color: var(--accent); font-size: 1.8rem; font-weight: bold;">100TB</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 5px;">Daily Throughput</div>
       </div>
-      <div class="asset-card" style="text-align: center; padding: 1rem; margin-bottom: 0;">
-        <div style="color: var(--accent); font-size: 1.5rem; font-weight: bold;">70%</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted);">Cost Reduction</div>
+      <div class="stat-card">
+        <div style="color: var(--accent); font-size: 1.8rem; font-weight: bold;">70%</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 5px;">Cost Efficiency</div>
       </div>
-      <div class="asset-card" style="text-align: center; padding: 1rem; margin-bottom: 0;">
-        <div style="color: var(--accent); font-size: 1.5rem; font-weight: bold;">20x</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted);">Perf Gain</div>
+      <div class="stat-card">
+        <div style="color: var(--accent); font-size: 1.8rem; font-weight: bold;">20x</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 5px;">Performance</div>
       </div>
-      <div class="asset-card" style="text-align: center; padding: 1rem; margin-bottom: 0;">
-        <div style="color: var(--accent); font-size: 1.5rem; font-weight: bold;">99.999%</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted);">System Uptime</div>
+      <div class="stat-card">
+        <div style="color: var(--accent); font-size: 1.8rem; font-weight: bold;">99.9%</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 5px;">System Uptime</div>
       </div>
     </div>
-    <p style="color: var(--text-muted); font-size: 0.95rem;">
+
+    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 3rem;">
       {{ if eq .Lang "zh-tw" }}
-        精通於大規模數據處理與 AI 應用的整合，我的核心技術棧包含：
+        專注於大規模數據基礎設施與 AI 代理的深度應用。核心能力涵蓋以下關鍵領域：
       {{ else }}
-        Specializing in massive-scale data engineering and AI integration. My core stack includes:
+        Focusing on large-scale data infrastructure and deep integration of AI Agents. My expertise covers these key pillars:
       {{ end }}
-      <br>
-      <span class="badge">Spark/Kafka</span> 
-      <span class="badge">Airflow</span> 
-      <span class="badge">GenAI</span> 
-      <span class="badge">OpenMetadata</span> 
-      <span class="badge">Datamodel</span>.
     </p>
   </div>
 </section>
 
-<section id="github-showcase">
-  <h3>[[ {{ if eq .Lang "zh-tw" }}核心作品集{{ else }}REPOSITORIES{{ end }} ]]</h3>
-  <div class="asset-card" style="border-style: dashed; opacity: 0.6; text-align: center;">
-    <p class="mono">{{ if eq .Lang "zh-tw" }}> 專案內容建置中...{{ else }}> Project assets loading...{{ end }}</p>
+<section id="expertise-matrix">
+  <h3 class="mono" style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 2px;">[[ EXPERTISE_MATRIX ]]</h3>
+  <div class="domain-grid">
+    <div class="domain-card">
+      <h4>{{ if eq .Lang "zh-tw" }}資料工程{{ else }}Data Engineering{{ end }}</h4>
+      <p>{{ if eq .Lang "zh-tw" }}建構每日 100TB 級別的穩健數據管線與分散式架構。{{ else }}Building robust 100TB+ daily pipelines and distributed architectures.{{ end }}</p>
+    </div>
+    <div class="domain-card">
+      <h4>{{ if eq .Lang "zh-tw" }}資料治理{{ else }}Data Governance{{ end }}</h4>
+      <p>{{ if eq .Lang "zh-tw" }}透過 OpenMetadata 實現數據資產透明化與合規管理。{{ else }}Enabling data asset transparency and compliance via OpenMetadata.{{ end }}</p>
+    </div>
+    <div class="domain-card">
+      <h4>{{ if eq .Lang "zh-tw" }}資料建模{{ else }}Data Modeling{{ end }}</h4>
+      <p>{{ if eq .Lang "zh-tw" }}設計高效能的數據倉儲模型與複雜業務邏輯對照。{{ else }}Designing high-performance warehouse models and business logics.{{ end }}</p>
+    </div>
+    <div class="domain-card">
+      <h4>{{ if eq .Lang "zh-tw" }}統計分析{{ else }}Statistical Analysis{{ end }}</h4>
+      <p>{{ if eq .Lang "zh-tw" }}運用深度統計方法進行製程優化與商業洞察挖掘。{{ else }}Applying deep statistical methods for process optimization.{{ end }}</p>
+    </div>
+    <div class="domain-card">
+      <h4>{{ if eq .Lang "zh-tw" }}AI 代理運用{{ else }}AI Agent Implementation{{ end }}</h4>
+      <p>{{ if eq .Lang "zh-tw" }}開發 GenAI 自動化 Agent 以提升決策效率與生產力。{{ else }}Developing GenAI Agents to enhance decision speed and productivity.{{ end }}</p>
+    </div>
   </div>
 </section>
 
-<section id="medium-sync">
-  <h3>[[ {{ if eq .Lang "zh-tw" }}最新洞察{{ else }}LATEST_INSIGHTS{{ end }} ]]</h3>
-  <div class="asset-card" style="border-style: dashed; opacity: 0.6; text-align: center;">
-    <p class="mono">
-      <a href="{{ .Site.Params.medium }}" style="color: var(--text-muted); text-decoration: none;">
-        {{ if eq .Lang "zh-tw" }}> 前往 Medium 專欄{{ else }}> Visit Medium Profile{{ end }}
-      </a>
+<section id="medium-sync" style="margin-top: 5rem;">
+  <h3 class="mono" style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 2px;">[[ EXTERNAL_FEEDS ]]</h3>
+  <div class="domain-card" style="border-style: dashed; opacity: 0.8; text-align: center; cursor: pointer;" onclick="window.open('{{ .Site.Params.medium }}', '_blank')">
+    <p class="mono" style="color: var(--primary);">
+      {{ if eq .Lang "zh-tw" }}> 前往 Medium 專欄查看更多技術文章{{ else }}> Visit Medium for technical insights{{ end }}
     </p>
   </div>
 </section>
+
+<div style="text-align: center; margin-top: 4rem;">
+  <div class="cta" style="opacity: 0.6; cursor: not-allowed; border-color: var(--text-muted); color: var(--text-muted);">
+    {{ if eq .Lang "zh-tw" }}技術諮詢 (Coming Soon){{ else }}Consultation (Coming Soon){{ end }}
+  </div>
+</div>
 {{ end }}
