@@ -13,6 +13,9 @@ I am a **Data Team Lead** specializing in Data Engineering and AI at a leading T
 - **Reliability**: Maintained a system uptime of **99.999%** for mission-critical operations.
 - **Leadership**: Scaled and mentored a high-performance data engineering team of 4+.
 
+#### Education
+- **National Chiao Tung University (NCTU)** | Master's Degree
+
 #### Technical Stack
 - **Languages & Logic**: Python, SQL, Data Modeling.
 - **Big Data & Streaming**: Spark, Kafka.
