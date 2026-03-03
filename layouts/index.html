@@ -1,36 +1,49 @@
 {{ define "main" }}
-<section id="hero" style="text-align:center; padding: 3rem 0;">
-  <h2 class="mono" style="color: var(--primary)">> ./hello_world.py</h2>
-  <p style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto;">
-    I am <strong>{{ .Site.Params.author }}</strong>, a <strong>{{ .Site.Params.jobTitle }}</strong> specializing in building robust data infrastructures.
-  </p>
-  <a href="{{ .Site.Params.calendly }}" class="cta">Book a Consultation</a>
+<section id="hero">
+  <h2 class="mono" style="color: var(--primary); margin-bottom: 0.5rem;">> ./profile.sh --status=active</h2>
+  <div class="hero-text">
+    <p>
+      I am <strong>{{ .Site.Params.author }}</strong>, a <strong>{{ .Site.Params.jobTitle }}</strong>.
+    </p>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">
+      Architecting resilient data pipelines and optimizing ETL performance using 
+      <span class="badge">Apache Airflow</span> 
+      <span class="badge">Python</span> 
+      <span class="badge">SQL Server</span>.
+    </p>
+  </div>
+  <a href="{{ .Site.Params.calendly }}" class="cta">Request Consultation</a>
 </section>
 
 <section id="github-showcase">
-  <h3 class="mono">> list --repos --featured</h3>
-  <div class="border-box">
-    <h4 style="margin-top:0"><a href="{{ .Site.Params.github }}/core-library" style="color:var(--primary)">core-library</a></h4>
-    <p style="font-size: 0.9rem; color: var(--text-muted)">High-performance ETL utility for Python data workflows.</p>
+  <h3>[[ REPOSITORIES ]]</h3>
+  <div class="asset-card">
+    <h4><a href="{{ .Site.Params.github }}/core-library">core-library</a></h4>
+    <p>High-performance ETL utility for Python data workflows. Focused on stream processing and data integrity.</p>
+    <div style="margin-top: 1rem;">
+      <span class="badge">Python</span> <span class="badge">ETL</span>
+    </div>
   </div>
-  <div class="border-box">
-    <h4 style="margin-top:0"><a href="{{ .Site.Params.github }}/workout-app" style="color:var(--primary)">workout-app</a></h4>
-    <p style="font-size: 0.9rem; color: var(--text-muted)">Automated workout tracking system with data visualization.</p>
+  <div class="asset-card">
+    <h4><a href="{{ .Site.Params.github }}/workout-app">workout-app</a></h4>
+    <p>Automated workout tracking system with sophisticated data visualization and health metric analysis.</p>
+    <div style="margin-top: 1rem;">
+      <span class="badge">TypeScript</span> <span class="badge">DataViz</span>
+    </div>
   </div>
 </section>
 
-<section id="medium-sync" style="margin-top: 3rem;">
-  <h3 class="mono">> cat medium_insights.log</h3>
-  <p style="color: var(--text-muted); font-style: italic;">Latest professional insights synchronized from Medium:</p>
-  <ul style="list-style: none; padding: 0;">
-    <li class="border-box">
-      <a href="{{ .Site.Params.medium }}" style="color:var(--primary)">Airflow ETL Optimization: A Deep Dive</a>
-      <p style="font-size: 0.8rem; margin: 0.5rem 0;">Published on Medium | Jan 2026</p>
-    </li>
-    <li class="border-box">
-      <a href="{{ .Site.Params.medium }}" style="color:var(--primary)">Scaling Data Pipelines with Kubernetes</a>
-      <p style="font-size: 0.8rem; margin: 0.5rem 0;">Published on Medium | Dec 2025</p>
-    </li>
-  </ul>
+<section id="medium-sync">
+  <h3>[[ LATEST_INSIGHTS ]]</h3>
+  <div class="asset-card">
+    <h4><a href="{{ .Site.Params.medium }}">Airflow ETL Optimization: A Deep Dive</a></h4>
+    <p>Strategic approaches to reducing latency in large-scale Apache Airflow environments.</p>
+    <p style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.6;">SOURCE: MEDIUM.COM | 2026-01</p>
+  </div>
+  <div class="asset-card">
+    <h4><a href="{{ .Site.Params.medium }}">Scaling Data Pipelines with Kubernetes</a></h4>
+    <p>Infrastructure as Code: Leveraging K8s for dynamic executor scaling in data environments.</p>
+    <p style="font-size: 0.75rem; margin-top: 0.8rem; opacity: 0.6;">SOURCE: MEDIUM.COM | 2025-12</p>
+  </div>
 </section>
 {{ end }}
