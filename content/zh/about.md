@@ -16,4 +16,3 @@ date: 2026-03-03
 我隨時歡迎討論關於資料策略或技術挑戰的議題。
 
 - **LinkedIn**: [Perry Hu 個人檔案](https://www.linkedin.com/in/perry-wu-7bb351b7/)
-- **Calendly**: [預約諮詢](https://calendly.com/perryhu)

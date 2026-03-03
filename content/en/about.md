@@ -16,4 +16,3 @@ I am a **Data Team Lead** with a deep passion for data architecture and pipeline
 I am always open to discussing data strategy or technical challenges. 
 
 - **LinkedIn**: [Perry Hu Profile](https://www.linkedin.com/in/perry-wu-7bb351b7/)
-- **Calendly**: [Book a Slot](https://calendly.com/perryhu)
