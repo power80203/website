@@ -1,4 +1,4 @@
-baseURL = 'https://perryhu.github.io/'
+baseURL = 'https://power80203.github.io/'
 languageCode = 'zh-tw'
 title = 'Perry Hu | Personal Brand Entity'
 
@@ -12,7 +12,7 @@ title = 'Perry Hu | Personal Brand Entity'
 
   # SameAs: Asset Integration
   medium = "https://medium.com/@perryhu"
-  github = "https://github.com/perryhu"
+  github = "https://github.com/power80203"
   linkedin = "https://www.linkedin.com/in/perryhu"
   
   # Conversion Path
