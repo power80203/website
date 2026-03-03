@@ -9,11 +9,11 @@ hasCJKLanguage = true
     contentDir = 'content/zh'
     weight = 1
     [languages.zh-tw.params]
-      description = "資料團隊主管 | 資料工程, ETL, Apache Airflow, Python, SQL Server 專家"
-      jobTitle = "資料團隊主管"
+      description = "資深經理 | 台灣領先製造業 (10,000+ 員工) | 資料工程與 AI 專家"
+      jobTitle = "資深經理 (Senior Manager)"
     [[languages.zh-tw.menu.main]]
-      name = "作品集"
-      url = "/works"
+      name = "專業資產"
+      url = "/"
       weight = 1
     [[languages.zh-tw.menu.main]]
       name = "Medium 專欄"
@@ -29,11 +29,11 @@ hasCJKLanguage = true
     contentDir = 'content/en'
     weight = 2
     [languages.en.params]
-      description = "Data Team Lead | Data Engineering, ETL, Apache Airflow, Python, SQL Server Specialist"
-      jobTitle = "Data Team Lead"
+      description = "Senior Manager | Leading Taiwanese Manufacturer (10,000+ Staff) | Data Engineering & AI Expert"
+      jobTitle = "Senior Manager"
     [[languages.en.menu.main]]
-      name = "Works"
-      url = "/works"
+      name = "Assets"
+      url = "/"
       weight = 1
     [[languages.en.menu.main]]
       name = "Medium"
@@ -46,8 +46,7 @@ hasCJKLanguage = true
 
 [params]
   author = "Perry Hu"
-  knowsAbout = ["Data Engineering", "ETL", "Apache Airflow", "Python", "SQL Server"]
+  knowsAbout = ["Python", "SQL", "Spark", "Kafka", "Airflow", "OpenMetadata", "GenAI", "Data Modeling"]
   medium = "https://medium.com/@power80203"
   github = "https://github.com/power80203"
   linkedin = "https://www.linkedin.com/in/perry-wu-7bb351b7/"
-  calendly = "https://calendly.com/perryhu"
